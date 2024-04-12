@@ -7,3 +7,12 @@ def encode(password):
     return password
 
 print(encoder("23456677"))
+
+
+def decode(password):
+    password = ""
+    for num in password:
+        num = int(num)
+        num += 3
+        password += str(num)
+    return password
